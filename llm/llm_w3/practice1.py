@@ -37,7 +37,7 @@ def init_collection():
   ids = [f"id{i}" for i in range(len(documents))]
 
   # 지식기반 문서의 저장을 수행할 임베딩 모델을 로드
-  model = SentenceTransformer("all-MiniLM-L6-v2")
+  # model = SentenceTransformer("all-MiniLM-L6-v2")
   embed_f = embedding_functions.SentenceTransformerEmbeddingFunction(model_name="all-MiniLM-L6-v2")
 
   # ChromaDB를 사용하기 위한 준비 : Chroma Client와 collection을 생성한다.
